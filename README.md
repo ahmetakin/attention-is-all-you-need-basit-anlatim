@@ -484,6 +484,6 @@ Hesaplamalar sonunda tahmin edilen **kelimeyi elde ederiz.**
 2. FareedKhan-dev GitHub matematiksel örnek https://github.com/FareedKhan-dev/best-introduction-to-transformer
 3. Kazemnejad Positional Encoding açıklaması https://kazemnejad.com/blog/transformer_architecture_positional_encoding/
 4. Çeşitli görsel Transformer anlatımları
-5. # Understanding Positional Encoding in Transformers https://erdem.pl/2021/05/understanding-positional-encoding-in-transformers
+5. Understanding Positional Encoding in Transformers https://erdem.pl/2021/05/understanding-positional-encoding-in-transformers
 
 
