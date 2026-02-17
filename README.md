@@ -137,11 +137,6 @@ Her kelime benzersiz bir sayıya dönüştürülür.
 
 Model artık kelimelerle değil sayılarla çalışır. Bu aşamadan sonra artıkgirdi verisi seçerek transformer mimarisi üzerinde çalışabiliriz
 
-Örnek:
-```
-"When you play game of thrones"  
-→ [3, 15, 7, 9, 2, 11]
-```
 
 ![input](assets/6.png)
 
@@ -176,7 +171,7 @@ $PE(pos, 2i+1) = cos(pos / 10000^{2i/d})$
 
 ![Örnek Gösterim](assets/9.png)
 
-Cümlemiz **"When you play the game of thrones"** idi **When** kelimesini başlangıç index'i (POS) 0 ve 6 boyutlu boyuta sahip, 0 dan 5'e indexli olarak, ilk kelimemizin konumsal kodlamasını hesaplamak gerekirse girdi (input) cümlemizdeki (makaleye uygun olarak):
+Cümlemiz **"Bilgisayar oyunu severim özellikle araba oyunu"** idi **Bilgisayar** kelimesini başlangıç index'i (POS) 0 ve 6 boyutlu boyuta sahip, 0 dan 5'e indexli olarak, ilk kelimemizin konumsal kodlamasını hesaplamak gerekirse girdi (input) cümlemizdeki (makaleye uygun olarak):
 
 ![Konumsal kodlama](assets/10.png)
 
@@ -360,7 +355,7 @@ Model:
 
 Değer(Value) matrisi, ilk **toplama ve normalleştirme** adımından sonra kod çözücüden gelir.
 
-Kod çözücünün ikinci girdisi ise **tahmin edilen metindir**. Hatırlarsanız, kodlayıcıya **(encoder)** girdimiz "When you play game of thrones" idi, bu nedenle kod çözücüye girdi tahmin edilen metindir, yani bizim durumumuzda **"you win or you die".**
+Kod çözücünün ikinci girdisi ise **tahmin edilen metindir**. Hatırlarsanız, kodlayıcıya **(encoder)** girdimiz "Bilgisayar oyunu severim özellikle araba oyunu" idi, bu nedenle kod çözücüye girdi tahmin edilen metindir, yani bizim durumumuzda **"telefonda oynuyorum".**
 
 Ancak **tahmin edilen girdi metninin(input text)**, dönüştürücünün nerede başlayıp nerede biteceğini anlamasını sağlayan standart bir belirteç dizilimini takip etmesi gerekir.
 
